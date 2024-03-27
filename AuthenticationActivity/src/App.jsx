@@ -127,8 +127,8 @@ function App() {
           value={email}
           onChange={handleEmailChange}
         />
-        {showEmailError && !email.trim() && <span style={{ color: 'red', fontSize: '14px', marginBottom: '5px' }}>Email cannot be empty</span>}
-        {showEmailError && email.trim() && <span style={{ color: 'red', fontSize: '14px', marginBottom: '5px' }}>Invalid email address</span>}
+        {showEmailError && !email.trim() && <span style={{ color: 'red', fontSize: '12px', marginBottom: '5px' }}>Email cannot be empty</span>}
+        {showEmailError && email.trim() && <span style={{ color: 'red', fontSize: '12px', marginBottom: '5px' }}>Invalid email address</span>}
         <input
           className='input'
           placeholder='Password'
@@ -136,8 +136,8 @@ function App() {
           value={password}
           onChange={handlePasswordChange}
         />
-        {passwordError && <span style={{ color: 'red', fontSize: '14px', marginBottom: '5px' }}>{passwordError}</span>}
-        <span style={{ color: strengthColor, fontSize: '14px', marginBottom: '5px' }}>{strengthText}</span>
+        {passwordError && <span style={{ color: 'red', fontSize: '12px', marginBottom: '5px' }}>{passwordError}</span>}
+        <span style={{ color: strengthColor, fontSize: '12px', marginBottom: '5px' }}>{strengthText}</span>
         <button className='button' onClick={handleSubmit}>Submit</button>
       </div>
     </div>
